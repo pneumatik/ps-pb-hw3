@@ -42,7 +42,7 @@ print('Средний возраст пользователей: ' + str(average
 user_number_2 = int(input('Введите номер пользователя, которого нужно переместить в конец: '))
 print('Список до изменения:')
 print(user_list)
-print('Пользователь с именем ' + user_list[user_number_2-1]['name'] + ' перемещен в конец')
+print(f"Пользователь с именем {user_list[user_number_2-1]['name']} перемещен в конец")
 
 new_user_list_1 = user_list.copy()
 new_user_list_1.remove(user_list[user_number_2-1])
